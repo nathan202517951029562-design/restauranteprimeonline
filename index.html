@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Viejo Papa — Restaurante • São Roque</title>
+<meta name="description" content="Viejo Papa Restaurante — Sabores autênticos e ambiente acolhedor em São Roque. Peça pelo WhatsApp, reserve mesa ou venha nos visitar." />
+
+<!-- Structured Data (Restaurant) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"Viejo Papa",
+  "legalName":"Viejo Papa Restaurante LTDA",
+  "url":"https://REPLACE_SEU_DOMINIO.com",
+  "image":["https://images.unsplash.com/photo-1541544181206-75c9f1f8fdc6?auto=format&fit=crop&w=1200&q=80"],
+  "telephone":"+55REPLACE_TELEFONE_INTERNACIONAL",
+  "email":"REPLACE_SEU_EMAIL@example.com",
+  "address":{"@type":"PostalAddress","streetAddress":"Estrada do Vinho, 4901","addressLocality":"Centro (Canguera)","addressRegion":"SP","postalCode":"18145-002","addressCountry":"BR"},
+  "servesCuisine":["Argentina","Carnes","Grelhados"],
+  "priceRange":"R$",
+  "openingHours":"Tu-Su 11:30-22:00"
+}
+</script>
+
+<style>
+:root{
+  --bg:#fbfaf9; --primary:#3b2f2f; --accent:#b85c30; --muted:#6b6b6b; --cta:#25d366; --card:#fff;
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#111;line-height:1.5}
+header{background:linear-gradient(135deg,var(--primary),#513f3f);color:#fff;padding:2rem 1rem;text-align:center}
+header h1{margin:0;font-size:1.9rem}
+header p{margin:.4rem 0 0;color:rgba(255,255,255,0.95)}
+.cta-row{margin-top:1rem;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+.btn{padding:.8rem 1.1rem;border-radius:999px;text-decoration:none;font-weight:700;display:inline-block}
+.btn-green{background:var(--cta);color:#fff}
+.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.16)}
+.container{max-width:1100px;margin:1.2rem auto;padding:0 1rem}
+.hero{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.hero img{width:320px;height:200px;object-fit:cover;border-radius:10px}
+.section{margin-top:1rem}
+.card{background:var(--card);border-radius:10px;padding:1rem;box-shadow:0 8px 30px rgba(0,0,0,0.06)}
+h2{margin:.3rem 0 .6rem}
+.lead{color:var(--muted);margin:0 0 1rem}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.8rem}
+.menu-item{background:#fff;border-radius:8px;padding:.6rem;text-align:left;border:1px solid rgba(0,0,0,0.04)}
+.menu-item h3{margin:.2rem 0;color:var(--primary)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.5rem}
+.gallery img{width:100%;height:110px;object-fit:cover;border-radius:8px}
+.contact dl{display:grid;gap:.35rem}
+.form-row{display:flex;gap:.6rem;flex-wrap:wrap}
+input,textarea,select{width:100%;padding:.6rem;border-radius:8px;border:1px solid #e6e6e6;font-size:.95rem}
+label{font-weight:600;font-size:.95rem;margin-bottom:.2rem;display:block}
+.small{font-size:.9rem;color:var(--muted)}
+.footer{background:var(--primary);color:#fff;padding:1rem;text-align:center;margin-top:1rem;border-top:4px solid rgba(255,255,255,0.06)}
+/* cookie */
+#cookieBanner{position:fixed;left:1rem;right:1rem;bottom:4rem;background:#fff;padding:.9rem;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,0.12);display:flex;gap:1rem;align-items:center;justify-content:space-between;z-index:999}
+#cookieBanner .text{flex:1}
+#privacyBar{position:fixed;bottom:0;left:0;right:0;background:rgba(59,47,47,0.98);color:#fff;padding:.6rem 1rem;display:flex;gap:.6rem;align-items:center;justify-content:center;z-index:998;flex-wrap:wrap}
+#privacyBar a{color:#fff;text-decoration:underline}
+@media(max-width:720px){.hero img{width:100%;height:180px}.cta-row{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+
+<header role="banner">
+  <div class="container">
+    <h1>Viejo Papa</h1>
+    <p>Casa de grelhados e cortes especiais — Estrada do Vinho, São Roque (Canguera)</p>
+    <div class="cta-row" role="group" aria-label="Ações">
+      <!-- SUBSTITUA com número WhatsApp no formato internacional sem sinais: ex 5511983xxxxxx -->
+      <a class="btn btn-green" href="https://wa.me/REPLACE_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer">🍽️ Pedir / Reservar (WhatsApp)</a>
+      <!-- telefone: use +55DDDNUMERO -->
+      <a class="btn btn-outline" href="tel:+55REPLACE_TELEFONE">☎️ Ligar Agora</a>
+    </div>
+  </div>
+</header>
+
+<main class="container" role="main">
+  <section class="section hero card" aria-labelledby="intro">
+    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80" alt="Prato grelhado">
+    <div>
+      <h2 id="intro">Sabores autênticos, cortes selecionados</h2>
+      <p class="lead">No Viejo Papa oferecemos cortes grelhados, parrilla e acompanhamentos preparados com técnica e carinho. Ambiente acolhedor para almoços e jantares em família.</p>
+      <p class="small"><strong>Razão Social:</strong> Viejo Papa Restaurante LTDA • <strong>CNPJ:</strong> 47.789.373/0001-57</p>
+    </div>
+  </section>
+
+  <section class="section card" id="cardapio">
+    <h2>Cardápio — Destaques</h2>
+    <p class="small">Substitua pelos seus pratos reais — sugestões abaixo para começar.</p>
+    <div class="menu-grid">
+      <div class="menu-item"><h3>Picanha na Parrilla</h3><div class="small">Corte nobre, acompanhamentos à escolha.</div></div>
+      <div class="menu-item"><h3>Chorizo Grelhado</h3><div class="small">Sabor autêntico do churrasco argentino.</div></div>
+      <div class="menu-item"><h3>Costela Assada</h3><div class="small">Cozimento lento e tempero marcante.</div></div>
+      <div class="menu-item"><h3>Porções e Entradas</h3><div class="small">Burrata, bruschettas e tábuas para compartilhar.</div></div>
+    </div>
+  </section>
+
+  <section class="section card" id="promos">
+    <h2>Promoções</h2>
+    <ul class="small">
+      <li>Terça do Cortes — desconto em cortes selecionados.</li>
+      <li>Jantar em família — combo para 4 pessoas com preço especial.</li>
+    </ul>
+    <p class="small">Consulte validade pelo WhatsApp.</p>
+  </section>
+
+  <section class="section card" id="galeria">
+    <h2>Galeria</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80" alt="Ambiente">
+      <img src="https://images.unsplash.com/photo-1547592166-9d5c5e8d4f3b?auto=format&fit=crop&w=800&q=80" alt="Prato 1">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Prato 2">
+      <img src="https://images.unsplash.com/photo-1553163147-622ab57e9c12?auto=format&fit=crop&w=800&q=80" alt="Bebida">
+    </div>
+  </section>
+
+  <section class="section card" id="contato">
+    <h2>Contato & Localização</h2>
+    <dl class="contact">
+      <dt class="small"><strong>Endereço</strong></dt><dd>Estrada do Vinho, 4901 — Centro (Canguera), São Roque — SP, CEP 18145-002</dd>
+      <dt class="small"><strong>Telefone</strong></dt><dd><a href="tel:+55REPLACE_TELEFONE">+55 (11) REPLACE_TELEFONE</a></dd>
+      <dt class="small"><strong>E-mail</strong></dt><dd><a href="mailto:REPLACE_SEU_EMAIL@example.com">REPLACE_SEU_EMAIL@example.com</a></dd>
+      <dt class="small"><strong>Horário</strong></dt><dd>Ter-Dom 11:30–22:00 (fecha segundas)</dd>
+    </dl>
+
+    <p style="margin-top:.6rem" class="small">Reservas e pedidos por WhatsApp ou telefone.</p>
+
+    <div style="margin-top:.6rem">
+      <iframe style="width:100%;height:260px;border:0;border-radius:8px" loading="lazy"
+        src="https://www.google.com/maps?q=Estrada%20do%20Vinho%204901%20S%C3%A3o%20Roque&output=embed" title="Mapa Viejo Papa"></iframe>
+    </div>
+  </section>
+
+  <section class="section card" id="reservas">
+    <h2>Peça / Reserve</h2>
+    <p class="small">Abra uma conversa no WhatsApp ou preencha o formulário abaixo.</p>
+
+    <form id="leadForm" onsubmit="return handleSubmit(event)" novalidate>
+      <div class="form-row">
+        <div style="flex:1">
+          <label for="name">Nome</label>
+          <input id="name" name="name" required placeholder="Seu nome">
+        </div>
+        <div style="width:170px">
+          <label for="phone">Telefone / WhatsApp</label>
+          <input id="phone" name="phone" type="tel" required placeholder="+55 (11) 9xxxx-xxxx">
+        </div>
+      </div>
+
+      <div style="margin-top:.6rem">
+        <label for="type">Tipo</label>
+        <select id="type" name="type">
+          <option>Reserva de mesa</option>
+          <option>Pedido para retirada</option>
+          <option>Pedido delivery</option>
+          <option>Orçamento / Eventos</option>
+        </select>
+      </div>
+
+      <div style="margin-top:.6rem">
+        <label for="message">Detalhes</label>
+        <textarea id="message" name="message" rows="4" placeholder="Data, horário, número de pessoas, pedidos..."></textarea>
+      </div>
+
+      <div style="margin-top:.6rem;display:flex;gap:.5rem;align-items:center">
+        <input id="consent" name="consent" type="checkbox" required>
+        <label for="consent" class="small">Concordo em receber comunicações relacionadas ao meu pedido e li a <a href="#privacy">Política de Privacidade</a>.</label>
+      </div>
+
+      <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
+        <button class="btn btn-green" type="submit">Enviar / Abrir WhatsApp</button>
+        <a class="btn btn-outline" href="tel:+55REPLACE_TELEFONE">☎️ Ligar</a>
+      </div>
+
+      <p id="formMessage" class="small" style="margin-top:.6rem;color:var(--muted)"></p>
+    </form>
+  </section>
+
+  <section class="section card" id="terms">
+    <h2>Termos de Uso — Viejo Papa Restaurante LTDA</h2>
+    <p class="small"><strong>Vigência:</strong> a partir de 31/08/2022</p>
+    <h3 class="small">1. Escopo</h3>
+    <p class="small">Estes termos regem o uso do site, reservas e pedidos. As contratações e pagamentos ocorrem presencialmente ou via parceiros de entrega quando aplicável.</p>
+    <h3 class="small">2. Reservas</h3>
+    <p class="small">Reservas são confirmadas por WhatsApp/telefone. No-shows sem aviso prévio podem sofrer cobrança conforme política interna.</p>
+    <h3 class="small">3. Pagamentos</h3>
+    <p class="small">Aceitamos pagamentos presenciais (cartão, dinheiro). Pedidos por parceiros seguem políticas do parceiro.</p>
+  </section>
+
+  <section class="section card" id="privacy">
+    <h2>Política de Privacidade & LGPD</h2>
+    <p class="small"><strong>Controlador:</strong> Viejo Papa Restaurante LTDA — CNPJ 47.789.373/0001-57</p>
+    <h3 class="small">Dados coletados</h3>
+    <p class="small">Coletamos nome, telefone, e-mail e dados de pedido/serviço para processar reservas, pedidos e emissão de nota fiscal quando aplicável. Também usamos cookies funcionais e analíticos.</p>
+    <h3 class="small">Finalidade</h3>
+    <p class="small">Os dados são usados para confirmar reservas/pedidos, comunicação com clientes, emissão fiscal e análises internas.</p>
+    <h3 class="small">Direitos</h3>
+    <p class="small">Titulares podem solicitar acesso, correção, portabilidade ou eliminação dos dados pelo e-mail: <a href="mailto:REPLACE_SEU_EMAIL@example.com">REPLACE_SEU_EMAIL@example.com</a>.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> Viejo Papa Restaurante LTDA • CNPJ 47.789.373/0001-57 • Estrada do Vinho, 4901 — São Roque — SP
+</footer>
+
+<!-- cookie banner -->
+<div id="cookieBanner" style="display:none" role="dialog" aria-live="polite">
+  <div class="text">
+    <strong>Usamos cookies</strong>
+    <div class="small">Este site usa cookies para funcionalidade e análises. Leia nossa <a href="#privacy">Política de Privacidade</a>.</div>
+  </div>
+  <div style="display:flex;gap:.5rem;align-items:center">
+    <button class="btn btn-green" id="acceptCookies">Aceitar</button>
+    <button class="btn btn-outline" id="declineCookies">Recusar</button>
+  </div>
+</div>
+
+<!-- privacy bar -->
+<div id="privacyBar" role="contentinfo">
+  <span>© <span id="barYear"></span> Viejo Papa —</span>
+  <a href="#privacy">Política de Privacidade</a> |
+  <a href="#terms">Termos de Uso</a> |
+  <a href="#contato">Contato</a>
+</div>
+
+<script>
+  // preencher anos
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('barYear').textContent = new Date().getFullYear();
+
+  // cookie banner simples
+  (function(){
+    var key='viejopapa_cookie';
+    var banner=document.getElementById('cookieBanner');
+    if(!localStorage.getItem(key)) banner.style.display='flex';
+    document.getElementById('acceptCookies').onclick=function(){localStorage.setItem(key,'accepted'); banner.style.display='none'};
+    document.getElementById('declineCookies').onclick=function(){localStorage.setItem(key,'declined'); banner.style.display='none'};
+  })();
+
+  // formulário: validação simples e fallback para WhatsApp
+  function handleSubmit(e){
+    e.preventDefault();
+    var name=document.getElementById('name').value.trim();
+    var phone=document.getElementById('phone').value.trim();
+    var type=document.getElementById('type').value;
+    var message=document.getElementById('message').value.trim();
+    var consent=document.getElementById('consent').checked;
+    var fm=document.getElementById('formMessage');
+    if(!name || !phone || !consent){ fm.textContent='Por favor preencha nome, telefone e aceite a política.'; return false; }
+
+    // Abra WhatsApp com mensagem pré-preenchida (substitua REPLACE_WHATSAPP_NUMBER no HTML)
+    var wa='https://wa.me/REPLACE_WHATSAPP_NUMBER?text=' + encodeURIComponent('Olá, sou '+name+'. Solicito: '+type+'. Detalhes: '+message+'. Tel: '+phone);
+    window.open(wa,'_blank');
+    fm.textContent='Abrindo WhatsApp para iniciar atendimento. Entraremos em contato em breve.';
+    return false;
+  }
+</script>
+</body>
+</html>
